@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@3.4.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="java.js"></script>
+    
+    <title>Join Now!</title>
+
+</head>
+<body>
+    <nav>
+        <div class="nav__logo">
+          <a href="#"><img src="assets/logo.png" alt="logo" /></a>
+        </div>
+        <ul class="nav__links">
+          <li class="link"><a href="index.html">Home</a></li>
+          <li class="link"><a href="programs.html">Program</a></li>
+          <li class="link"><a href="contact_us.html">Contact Us</a></li>
+          <li class="link"><a href="#">Community</a></li>
+        </ul>
+        </nav>
+        <div class="header__content">
+          <h2>JOIN NOW!</h2>
+        </div>
+    
+        <div class="explore__card explore__container join__form">
+        <form>    
+        <input placeholder="Name" class="input" name="text" type="text"><br>
+        <input placeholder="Age" class="input" name="Age" type="text"><br>
+        <input placeholder="Height in feet" class="input" name="number" type="text"><br>
+        <input placeholder="Weight in Kgs" class="input" name="number" type="text"><br>
+        <input placeholder="Current Goal" class="input" name="text" type="text"><br>
+        <input placeholder="Plan" class="input" name="text" type="text"><br>
+        </div>
+        <button class="button">ENTER</button>
+      </form>
+        </body>
+
+
+        <footer class="section__container footer__container">
+          <span class="bg__blur"></span>
+          <span class="bg__blur footer__blur"></span>
+          <div class="footer__col">
+            <div class="footer__logo"><img src="assets/logo.png" alt="logo" /></div>
+            <p>
+              Take the first step towards a healthier, stronger you with our
+              unbeatable pricing plans. Let's sweat, achieve, and conquer together!
+            </p>
+            <div class="footer__socials">
+             <a href="https://www.facebook.com" target="_blank"><i class="ri-facebook-fill"></i></a> 
+              <a href="https://www.instagram.com" target="_blank"><i class="ri-instagram-line"></i></a>
+              <a href="https://www.twitter.com" target="_blank"><i class="ri-twitter-fill"></i></a>
+              <a href="https://www.youtube.com" target="_blank"><i class= "ri-youtube-fill"></i></a>
+            </div>
+          </div>
+          
+        </footer>
+        <div class="footer__bar">
+          Copyright © Our Semester-End Project. All rights reserved.
+        </div>
+        
+        </body>
+      
+
+</html>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+    :root {
+  --primary-color: #111317;
+  --primary-color-light: #1f2125;
+  --primary-color-extra-light: #35373b;
+  --secondary-color: #f9ac54;
+  --secondary-color-dark: #d79447;
+  --text-light: #d1d5db;
+  --white: #ffffff;
+  --max-width: 1200px;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+    body {
+      background-color: #111317;
+      font-family: "Poppins", sans-serif;
+      background-color: var(--primary-color);
+  
+      color: white;
+      text-align: center;
+    }
+   
+    nav {
+  max-width: var(--max-width);
+  margin: auto;
+  padding: 2rem 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+.nav__logo {
+  max-width: 150px;
+}
+
+.nav__links {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+}
+
+.link a {
+  position: relative;
+  padding-bottom: 0.75rem;
+  color: var(--white);
+}
+
+.link a::after {
+  content: "";
+  position: absolute;
+  height: 2px;
+  width: 0;
+  left: 0;
+  bottom: 0;
+  background-color: var(--secondary-color);
+  transition: 0.3s;
+}
+
+.link a:hover::after {
+  width: 100%;
+}
+
+.join__form {
+  display: flex; /* Use flexbox for vertical layout */
+  flex-direction: column; /* Stack elements vertically */
+  padding: 1rem; /* Add padding for spacing */
+  background-color: var(--primary-color-light); /* Set background color */
+  border: 2px solid transparent; /* Add border */
+  border-radius: 10px; /* Rounded corners for card-like style */
+  margin: 1rem auto; /* Add margin for spacing and centering */
+  width: 6in/* Adjust width as needed */
+  
+}
+
+.join__form label {
+  margin-bottom: 0.5rem; /* Add space between label and input */
+}
+
+.explore__container {
+  display: flex; /* Add this line */
+  justify-content: center; /* Add this line */
+  align-items: center;
+  
+}
+
+.explore__card {
+  padding: 1rem;
+  background-color: var(--primary-color-light);
+  border: 2px solid transparent;
+  border-radius: 10px;
+  transition: 0.3s;
+  
+}
+
+.explore__card span {
+  display: inline-block;
+  padding: 2px 9px;
+  margin-bottom: 1rem;
+  font-size: 1.75rem;
+  color: var(--white);
+  background-color: var(--secondary-color-dark);
+  border-radius: 5px;
+}
+
+.explore__card:hover {
+  background-color: var(--primary-color-extra-light);
+  border-color: var(--secondary-color);
+}
+
+.input {
+  background-color: #212121;
+  max-width: 190px;
+  height: 40px;
+  padding: 3px;
+  margin-top: 1mm;
+  margin-bottom: 1mm;
+  font-family: "Poppins", sans-serif;
+  /* text-align: center; */
+  border: 2px solid white;
+  border-radius: 5px;
+  /* box-shadow: 3px 3px 2px rgb(249, 255, 85); */
+}
+
+.input:focus {
+  color: rgb(255, 255, 255);
+  background-color: #212121;
+  outline-color: rgb(255, 187, 0);
+  box-shadow: -3px -3px 15px rgb(255, 187, 0);
+  transition: .1s;
+  transition-property: box-shadow;
+}
+button {
+  padding: 1.3em 3em;
+  font-family: "Poppins", sans-serif;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+  font-weight: 500;
+  color: #000;
+  background-color: #fff;
+  border: none;
+  border-radius: 45px;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+  outline: none;
+  margin-top: 8px;
+}
+
+button:hover {
+  background-color: #f9ac54;
+  box-shadow: 0px 15px 20px rgb(255, 187, 0);
+  color: #fff;
+  transform: translateY(-7px);
+}
+
+button:active {
+  transform: translateY(-1px);
+}
+.header__content h2{
+  margin-bottom: 1rem;
+  font-size: 5rem;
+  font-weight: 600;
+  color: var(--secondary-color);
+}
+  </style>
